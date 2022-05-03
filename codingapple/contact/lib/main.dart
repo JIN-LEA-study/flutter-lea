@@ -19,9 +19,15 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(),
-        body: Container(),
-        bottomNavigationBar: BottomAppBar( child: Text('dsdfs')),
+        body: Column(
+
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Icon(Icons.phone),
+            Icon(Icons.message),
+            Icon(Icons.contact_page)
+          ],
+        )
       )
     );
   }
