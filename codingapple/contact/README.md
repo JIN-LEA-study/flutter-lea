@@ -1,14 +1,14 @@
 
-My first Flutter study and project
+<b> My first Flutter study and project </b>
 
 project 1, 연락처앱 만들기
 
 Flutter todo list
 
-[o] Flutter 개발 환경 세팅
-[o] Flutter 기본 위젯 (Text, Icon, Image, container)
-[o] Flutter layout (Scaffold)
-[] Flutter Box Design (margin, padding)
+- [o] Flutter 개발 환경 세팅
+- [o] Flutter 기본 위젯 (Text, Icon, Image, container)
+- [o] Flutter layout (Scaffold)
+- [] Flutter Box Design (margin, padding)
 
 
 Flutter Grammar
