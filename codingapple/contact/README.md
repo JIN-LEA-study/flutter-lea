@@ -1,5 +1,5 @@
 
-<b> My first Flutter study and project </b>
+<h3><b> My first Flutter study and project </b> </h3>
 
 project 1, 연락처앱 만들기
 
