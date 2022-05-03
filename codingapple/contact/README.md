@@ -20,4 +20,5 @@ project 1, 연락처앱 만들기
 - MaterialApp() : 위젯, 구글이 제공하는 테마 이용 가능
 - Cupertino : apple style 테마 사용 가능
 - Scaffold() : 상중하로 나눠주는 위젯. AppBar()/Container()/BottomAppBar()
+- Row(children:[]) : 오른쪽으로 나열
 
