@@ -1,16 +1,20 @@
-# contact
 
-A new Flutter project.
+My first Flutter study and project
 
-## Getting Started
+project 1, 연락처앱 만들기
 
-This project is a starting point for a Flutter application.
+Flutter todo list
 
-A few resources to get you started if this is your first Flutter project:
+[o] Flutter 개발 환경 세팅
+[o] Flutter 기본 위젯 (Text, Icon, Image, container)
+[o] Flutter layout (Scaffold)
+[] Flutter Box Design (margin, padding)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter Grammar
+
+- void main() 은 앱을 실행하는 코드
+- class Myapp extends 부분은 기본적으로 채워져야 하는 코드
+- 기본 위젯 문법 : Text, Icon, Image, Container(SizedBox)
+- 부모(기준) 안에 child(자식) 넣어 코드 작성
+
