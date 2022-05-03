@@ -15,13 +15,14 @@ class MyApp extends StatelessWidget {
     // Text : Text('안녕')'
     // Icon : Icon.star
     // Image : Image.assets('경로')
-    // Container,SizdBox(), LP단위
+    // Container,SizedBox(), LP단위
 
     return MaterialApp(
-      home: Center( //부모
-        child: Container( width: 50, height: 50, color: Colors.blue) //자식
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Container(),
+        bottomNavigationBar: BottomAppBar( child: Text('dsdfs')),
       )
     );
   }
-
 }
