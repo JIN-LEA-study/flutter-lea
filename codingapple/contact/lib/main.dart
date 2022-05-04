@@ -19,15 +19,21 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        body: Column(
-
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Icon(Icons.phone),
-            Icon(Icons.message),
-            Icon(Icons.contact_page)
-          ],
-        )
+        appBar: AppBar( title: Text('앱임')),
+        body: Text('안녕'),
+        bottomNavigationBar: BottomAppBar(
+          child: SizedBox(
+            height: 70,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(Icons.phone),
+                Icon(Icons.message),
+                Icon(Icons.contact_page),
+              ]
+            ),
+          ),
+        ),
       )
     );
   }
