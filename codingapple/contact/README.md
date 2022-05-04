@@ -8,7 +8,10 @@ project 1, 연락처앱 만들기
 - [o] Flutter 개발 환경 세팅
 - [o] Flutter 기본 위젯 (Text, Icon, Image, container)
 - [o] Flutter layout (Scaffold)
-- [] Flutter Box Design (margin, padding)
+- [o] Flutter Box Design (margin, padding)
+- [] Flutter Typograghy, Layout
+- [] Expanded, Flexible, Layout
+
 
 
 <b>Flutter Grammar</b>
@@ -23,5 +26,7 @@ project 1, 연락처앱 만들기
 - Row(children:[]) : 오른쪽으로 나열, 리스트 형태로 코드 작성
 - Column(children:[]) : 세로 정렬
 - MainAxisAlignment.center : 가운데 정렬
+- AppBer (title: Text)
+- SizedBox (가벼움), Container(무거움)
 
 
