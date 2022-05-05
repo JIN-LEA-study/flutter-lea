@@ -20,7 +20,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar( actions : [Icon(Icons.star)], title: Text('ddd')),
-        body: SizedBox(
+        body: Row(
+          children: [
+            Expanded(child: Container(color: Colors.blue)),
+            Container(width: 100, color: Colors.green),
+          ],
           )
     ),
 
