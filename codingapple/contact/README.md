@@ -51,3 +51,7 @@ project 1, 연락처앱 만들기
 - 정수를 문자열로 변환해서 쓰고 싶을땐 toString()
 - 출력하는 문법 : print(); console에 출력됨
 - Button: child와 onPressed: () {}가 꼭 들어가야됨
+- state를 쓰면 state변할 때마다 자동 재렌더링
+- stful : state 만드는 법 1
+- StatelessWidget -> StatefulWidget : state만드는 법 2
+- setState(() { 변경내용 적기 })
