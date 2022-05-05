@@ -19,36 +19,24 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar( actions : [Icon(Icons.star)], title: Text('ddd')),
-        body: Container(
-          height: 150,
-          padding: EdgeInsets.all(10),
-          child: Row(
-            children: [
-              Image.asset('image0.png', width: 150,),
-              Container(
-                width: 300,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('카메라팝니다', style: TextStyle(),),
-                    Text('금호동 3가'),
-                    Text('7000원'),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Icon(Icons.favorite),
-                        Text('4'),
-                      ],
-                    )
-                  ]
-                )
-              )
-            ]
-          ),
-        )
+        appBar: AppBar(),
+        body: ShopItem(),
 
       ),
     );
   }
 }
+
+
+// 위젯 만들기 1. 작명 2. return에 코드 넣기
+class ShopItem extends StatelessWidget {
+  const ShopItem({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      child: Text('안녕'),
+    );
+  }
+}
+
