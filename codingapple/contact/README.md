@@ -27,6 +27,10 @@ project 1, 연락처앱 만들기
 - Column(children:[]) : 세로 정렬
 - MainAxisAlignment.center : 가운데 정렬
 - AppBer (title: Text)
-- SizedBox (가벼움), Container(무거움)
+- SizedBox (가벼움) width/height/child만 필요할 경우, Container(무거움)
+- EdgeInsets.all(20) : 마진, 패딩 주는 방법
+- EdgeInsets.fromLTRB : Left, Top, Right, Bottom
+- Align(alignment: ) : 가운데 정렬
+- width: double.infinity (무한으로 채워줌)
 
 

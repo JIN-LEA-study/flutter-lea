@@ -20,9 +20,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar( title: Text('앱임')),
-        body: Center(
+        body: Align(
+          alignment: Alignment.topCenter,
           child: Container(
-            width: 150, height: 50, color: Colors.blue,
+            width: double.infinity, height: 50, color: Colors.blue,
             // margin: EdgeInsets.all(20),
             ),
         ),
