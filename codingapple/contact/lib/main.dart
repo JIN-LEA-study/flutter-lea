@@ -26,16 +26,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(),
         bottomNavigationBar: BottomAppBar(),
-        body: ListView(
-          children: [
-            Text('안녕'),
-            Text('안녕'),
-            Text('안녕'),
-            Text('안녕'),
-            Text('안녕'),
-            Text('안녕'),
-
-          ],
+        body: ListView.builder(
+          itemCount: 5,
+          itemBuilder: (context, i){
+            return Text(i.toString());
+          },
         ),
 
       ),
