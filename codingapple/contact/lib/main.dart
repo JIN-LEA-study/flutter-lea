@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
             children: [
               Image.asset('image0.png', width: 150,),
               Container(
-                width: ,
+                width: 300,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
