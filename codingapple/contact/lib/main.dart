@@ -19,16 +19,11 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar( title: Text('앱임')),
-        body: Align(
-          alignment: Alignment.topCenter,
-          child: Container(
-            width: double.infinity, height: 50, color: Colors.blue,
-            // margin: EdgeInsets.all(20),
-            ),
-        ),
+        appBar: AppBar( actions : [Icon(Icons.star)], title: Text('ddd')),
+        body: SizedBox(
+          )
+    ),
 
-            ),
-          );
+            );
   }
 }
