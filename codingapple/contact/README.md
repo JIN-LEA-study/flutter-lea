@@ -9,7 +9,7 @@ project 1, 연락처앱 만들기
 - [o] Flutter 기본 위젯 (Text, Icon, Image, container)
 - [o] Flutter layout (Scaffold)
 - [o] Flutter Box Design (margin, padding)
-- [] Flutter Typograghy, Layout
+- [o] Flutter Typograghy, Layout
 - [] Expanded, Flexible, Layout
 
 
@@ -32,5 +32,9 @@ project 1, 연락처앱 만들기
 - EdgeInsets.fromLTRB : Left, Top, Right, Bottom
 - Align(alignment: ) : 가운데 정렬
 - width: double.infinity (무한으로 채워줌)
+- 파라미터 끝나면 , 찍기! 그래야 다음 파라미터로 넘어감
+- Color(0xffaaaaaa) : aaaaaa = color numbers
+- Color.formRGBO(r, g, b, opacity)
+- fontSize: , letterSpacing: , backgroundColor: ,
 
 
