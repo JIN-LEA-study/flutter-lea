@@ -49,4 +49,4 @@ project 1, 연락처앱 만들기
 - ListView() : 긴 목록이 사용할 때 사용, 스크롤바 생김, 스크롤 위치 감시 가능, 메모리 절약 가능(성능개선)
 - 반복문 ListView.builder( itemCount: , itemBuilder: (c, i)) 파라미터를 넣지 않으면 에러가 뜸
 - 정수를 문자열로 변환해서 쓰고 싶을땐 toString()
-
+- 출력하는 문법 : print(); console에 출력됨
