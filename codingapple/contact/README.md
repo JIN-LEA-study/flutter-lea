@@ -10,7 +10,8 @@ project 1, 연락처앱 만들기
 - [o] Flutter layout (Scaffold)
 - [o] Flutter Box Design (margin, padding)
 - [o] Flutter Typograghy, Layout
-- [] Expanded, Flexible, Layout
+- [o] Expanded, Flexible, Layout
+- [o] ListView(), how to make widget
 
 
 
