@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // 앱을 실행시켜주세요.
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 
@@ -12,7 +12,9 @@ void main() {
 
 // 기본으로 채워져야 하는 문법
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
+
+  var a = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +26,14 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          child: Text(a.toString()),
+          onPressed: (){
+            print(a);
+            //버튼 누를 때마다 실행
+            a++;
+          },
+        ),
         appBar: AppBar(),
         bottomNavigationBar: BottomAppBar(),
         body: ListView.builder(
