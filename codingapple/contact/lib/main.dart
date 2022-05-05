@@ -20,14 +20,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar( title: Text('앱임')),
-        body: Container(
-          width: 50, height: 50,
-          // margin: EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            border: Border.all(color : Colors.black)
-          )
+        body: Center(
+          child: Container(
+            width: 150, height: 50, color: Colors.blue,
+            // margin: EdgeInsets.all(20),
             ),
-          ),
-    );
+        ),
+
+            ),
+          );
   }
 }
