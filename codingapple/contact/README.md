@@ -50,3 +50,4 @@ project 1, 연락처앱 만들기
 - 반복문 ListView.builder( itemCount: , itemBuilder: (c, i)) 파라미터를 넣지 않으면 에러가 뜸
 - 정수를 문자열로 변환해서 쓰고 싶을땐 toString()
 - 출력하는 문법 : print(); console에 출력됨
+- Button: child와 onPressed: () {}가 꼭 들어가야됨
