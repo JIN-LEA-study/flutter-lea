@@ -10,11 +10,19 @@ void main() {
 //   child: Text('안녕')
 // );
 
+
+
 // 기본으로 채워져야 하는 문법
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   MyApp({Key? key}) : super(key: key);
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   var a = 1;
+  var name = ['lea', 'jin', 'jun'];
 
   @override
   Widget build(BuildContext context) {
@@ -26,23 +34,22 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          child: Text(a.toString()),
-          onPressed: (){
-            print(a);
-            //버튼 누를 때마다 실행
-            a++;
-          },
-        ),
-        appBar: AppBar(),
+        // floatingActionButton: FloatingActionButton(
+        //   child: Text(a.toString()),
+        //   onPressed: (){
+        //     setState(() {
+        //       a++;
+        //     });
+        //   },
+        // ),
+        appBar: AppBar(title: Text('연락처앱'),),
         bottomNavigationBar: BottomAppBar(),
         body: ListView.builder(
-          itemCount: 5,
+          itemCount: 3,
           itemBuilder: (context, i){
-            print(i);
             return ListTile(
               leading: Image.asset('image0.png'),
-              title: Text('홍길동'),
+              title: Text(name[i]),
             );
           },
         ),
