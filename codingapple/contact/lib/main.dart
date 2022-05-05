@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar( title: Text('앱임')),
         body: Container(
-          width: 50, height: 50
+          width: 50, height: 50,
           // margin: EdgeInsets.all(20),
           decoration: BoxDecoration(
             border: Border.all(color : Colors.black)
