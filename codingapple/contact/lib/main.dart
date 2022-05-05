@@ -5,6 +5,11 @@ void main() {
   runApp(const MyApp());
 }
 
+
+// var a = SizedBox(
+//   child: Text('안녕')
+// );
+
 // 기본으로 채워져야 하는 문법
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -39,4 +44,5 @@ class ShopItem extends StatelessWidget {
     );
   }
 }
+
 
