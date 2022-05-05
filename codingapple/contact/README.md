@@ -35,6 +35,10 @@ project 1, 연락처앱 만들기
 - 파라미터 끝나면 , 찍기! 그래야 다음 파라미터로 넘어감
 - Color(0xffaaaaaa) : aaaaaa = color numbers
 - Color.formRGBO(r, g, b, opacity)
-- fontSize: , letterSpacing: , backgroundColor: ,
+- fontSize: , letterSpacing: , backgroundColor: 
+- FontWeight.w700 : 폰트두께
+- 레이아웃 잘 짜는 법 : 1. 예시디자인 준비 / 2. 예시 화면에 네모 그리기 / 3. 바깥 네모부터 하나하나 위젯으로 만들기
+- 가로 박스 (Row), 세로 박스(Column)
+
 
 
