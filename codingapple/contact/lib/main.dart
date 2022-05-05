@@ -25,7 +25,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
-        body: ShopItem(),
+        bottomNavigationBar: BottomAppBar(),
+        body: ListView(
+          children: [
+            Text('안녕'),
+            Text('안녕'),
+            Text('안녕'),
+            Text('안녕'),
+            Text('안녕'),
+            Text('안녕'),
+
+          ],
+        ),
 
       ),
     );
