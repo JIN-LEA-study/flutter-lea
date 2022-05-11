@@ -55,3 +55,4 @@ project 1, 연락처앱 만들기
 - stful : state 만드는 법 1
 - StatelessWidget -> StatefulWidget : state만드는 법 2
 - setState(() { 변경내용 적기 })
+- context : 부모 위젯의 정보를 담고 있는 변수, 클릭하면 부모 위젯을 알 수 있 (족보라고 생각하면 됨)
