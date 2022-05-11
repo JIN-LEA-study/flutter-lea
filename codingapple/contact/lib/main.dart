@@ -36,12 +36,16 @@ class _MyAppState extends State<MyApp> {
     // Container,SizedBox(), LP단위
 
     return Scaffold(
-        floatingActionButton: FloatingActionButton(
-          onPressed: (){
-            showDialog(context: context, builder: (context) {
-              return Dialog(child: Text('안녕'));
-            });
-          },
+        floatingActionButton: Builder(
+          builder: (context) {
+            return FloatingActionButton(
+              onPressed: (){
+                showDialog(context: context, builder: (context) {
+                  return Dialog(child: Text('안녕'));
+                });
+              },
+            );
+          }
         ),
         appBar: AppBar(title: Text('연락처앱'),),
         bottomNavigationBar: BottomAppBar(),
