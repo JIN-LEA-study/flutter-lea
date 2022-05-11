@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 
 // 앱을 실행시켜주세요.
 void main() {
-  runApp(MyApp());
+  runApp( MaterialApp(
+      home: MyApp()
+  )
+  );
 }
 
 
 // var a = SizedBox(
 //   child: Text('안녕')
 // );
-
 
 
 // 기본으로 채워져야 하는 문법
@@ -33,16 +35,14 @@ class _MyAppState extends State<MyApp> {
     // Image : Image.assets('경로')
     // Container,SizedBox(), LP단위
 
-    return MaterialApp(
-      home: Scaffold(
-        // floatingActionButton: FloatingActionButton(
-        //   child: Text(a.toString()),
-        //   onPressed: (){
-        //     setState(() {
-        //       a++;
-        //     });
-        //   },
-        // ),
+    return Scaffold(
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){
+            showDialog(context: context, builder: (context) {
+              return Dialog(child: Text('안녕'));
+            });
+          },
+        ),
         appBar: AppBar(title: Text('연락처앱'),),
         bottomNavigationBar: BottomAppBar(),
         body: ListView.builder(
@@ -60,8 +60,7 @@ class _MyAppState extends State<MyApp> {
           },
         ),
 
-      ),
-    );
+      );
   }
 }
 
