@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(title: Text(total.toString()),),
         bottomNavigationBar: BottomAppBar(),
         body: ListView.builder(
-          itemCount: 3,
+          itemCount: name.length, //name 자료의 길이
           itemBuilder: (context, i){
             return ListTile(
               leading: Image.asset('image0.png'),
@@ -93,7 +93,7 @@ class DialogUI extends StatelessWidget {
         child: Column (
           children: [
             TextField(onChanged: (text) {inputData2 = text;},),
-            TextButton( child: Text('완료'), onPressed: (){addOne();}),
+            TextButton( child: Text('완료'), onPressed: (){addOne(); addName();}),
             TextButton(
               child: Text('취소'),
               onPressed: () { Navigator.pop(context); })
