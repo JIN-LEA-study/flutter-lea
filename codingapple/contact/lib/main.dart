@@ -27,6 +27,14 @@ class _MyAppState extends State<MyApp> {
   var name = ['lea', 'jin', 'jun'];
   var like = [0, 0, 0];
 
+  addName() {
+    setState(() {
+      name.add('dooho');
+    });
+  }
+
+  //list에 자료추가하는 법
+
 
   addOne(){
     setState(() {
@@ -58,7 +66,7 @@ class _MyAppState extends State<MyApp> {
       floatingActionButton: FloatingActionButton(
         onPressed:(){
           showDialog(context: context, builder: (context) {
-            return DialogUI(addOne: addOne); // 자식위젯(작명: 보낼state)
+            return DialogUI(addOne: addOne, addName: addName); // 자식위젯(작명: 보낼state)
           });
       },
       ),
@@ -70,10 +78,11 @@ class _MyAppState extends State<MyApp> {
 
 
 class DialogUI extends StatelessWidget {
-  DialogUI({Key? key, this.addOne}) : super(key: key);
+  DialogUI({Key? key, this.addOne, this.addName}) : super(key: key);
   final addOne;
   var inputData = TextEditingController();
   var inputData2 ='';
+  final addName;
 
   @override
   Widget build(BuildContext context) {
