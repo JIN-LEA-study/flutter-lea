@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:contacts_service/contacts_service.dart';
 
 // 앱을 실행시켜주세요.
 void main() {
@@ -30,6 +31,8 @@ class _MyAppState extends State<MyApp> {
     var status = await Permission.contacts.status; //await 붙이면 다음 줄 실행 안하고 기다려줌
     if (status.isGranted) {
       print('허락됨');
+      var contacts = await ContactsService.getContacts();
+      print(contacts);
     } else if (status.isDenied) {
       print('거절됨');
       Permission.contacts.request();
