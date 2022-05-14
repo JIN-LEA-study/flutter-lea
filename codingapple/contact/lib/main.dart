@@ -36,17 +36,6 @@ class _MyAppState extends State<MyApp> {
     // Container,SizedBox(), LP단위
 
     return Scaffold(
-        floatingActionButton: Builder(
-          builder: (context) {
-            return FloatingActionButton(
-              onPressed: (){
-                showDialog(context: context, builder: (context) {
-                  return Dialog(child: Text('안녕'));
-                });
-              },
-            );
-          }
-        ),
         appBar: AppBar(title: Text('연락처앱'),),
         bottomNavigationBar: BottomAppBar(),
         body: ListView.builder(
@@ -55,16 +44,43 @@ class _MyAppState extends State<MyApp> {
             return ListTile(
               leading: Image.asset('image0.png'),
               title: Text(name[i]),
-              trailing: ElevatedButton(child: Text('좋아요'), onPressed: (){
-                setState(() {
-                  like[i]++;
-                });
-              },),
-            );
+              );
           },
         ),
+      floatingActionButton: FloatingActionButton(
+        onPressed:(){
+          showDialog(context: context, builder: (context) {
+            return DialogUI();
+          });
+      },
+      ),
 
       );
+  }
+}
+
+
+
+class DialogUI extends StatelessWidget {
+  const DialogUI({key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Dialog(
+      child: SizedBox(
+        width: 300,
+        height: 300,
+        child: Column (
+          children: [
+            TextField(),
+            TextButton( child: Text('완료'), onPressed: (){}),
+            TextButton(
+              child: Text('취소'),
+              onPressed: () { Navigator.pop9context); })
+          ],
+        ),
+      ),
+    );
   }
 }
 
