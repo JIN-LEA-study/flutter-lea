@@ -98,7 +98,7 @@ class _MyAppState extends State<MyApp> {
           itemBuilder: (context, i){
             return ListTile(
               leading: Image.asset('image0.png'),
-              title: Text(name[i].givenName),
+              title: Text(name[i].givenName ?? '이름업없는놈'),
               );
           },
         ),
