@@ -33,14 +33,16 @@ class _MyAppState extends State<MyApp> {
     } else if (status.isDenied) {
       print('거절됨');
       Permission.contacts.request();
+      openAppSettings();
     }
   }
 
-  @override
-  void initState() {
-    super.initState();
-    // TODO : implement initState
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   getPermission();
+  //   // TODO : implement initState
+  // }
 
 
   var total = 3;
@@ -73,7 +75,9 @@ class _MyAppState extends State<MyApp> {
     // Container,SizedBox(), LP단위
 
     return Scaffold(
-        appBar: AppBar(title: Text(total.toString()),),
+        appBar: AppBar(title: Text(total.toString()), actions: [
+          IconButton(onPressed: (){getPermission();}, icon: Icon(Icons.contacts))
+        ]),
         bottomNavigationBar: BottomAppBar(),
         body: ListView.builder(
           itemCount: name.length, //name 자료의 길이
