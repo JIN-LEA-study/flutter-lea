@@ -27,13 +27,14 @@ class _MyAppState extends State<MyApp> {
   var name = ['lea', 'jin', 'jun'];
   var like = [0, 0, 0];
 
-  addName() {
+  addName(a) {
     setState(() {
-      name.add('dooho');
+      name.add(a);
     });
   }
 
   //list에 자료추가하는 법
+  //완료 버튼 누르면 name에 유저가 입력한 자료 추가
 
 
   addOne(){
@@ -92,8 +93,8 @@ class DialogUI extends StatelessWidget {
         height: 300,
         child: Column (
           children: [
-            TextField(onChanged: (text) {inputData2 = text;},),
-            TextButton( child: Text('완료'), onPressed: (){addOne(); addName();}),
+            TextField(controller: inputData,),
+            TextButton( child: Text('완료'), onPressed: (){addOne(); addName(inputData.text);}),
             TextButton(
               child: Text('취소'),
               onPressed: () { Navigator.pop(context); })
