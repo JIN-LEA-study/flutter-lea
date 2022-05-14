@@ -71,3 +71,4 @@ project 1, 연락처앱 만들기
 - dart는 타입을 잘 지켜야 함
 - Union Type : 변수 하나에 타입 여러개를 넣을 수 있음
 - List<dynamic> Type : 리스트인데 안에 모든 타입을 넣을 수 있음
+- 발행하기 전 체크 사항 : 1.타입 지정을 잘했는가? 2. null check 
