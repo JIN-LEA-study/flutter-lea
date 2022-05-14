@@ -27,11 +27,12 @@ class _MyAppState extends State<MyApp> {
 
   // 패키지 연락처 권한 여부
   getPermission() async {
-    var state = await Permisson.contacts.status; //await 붙이면 다음 줄 실행 안하고 기다려줌
-    if (state.insgranted) {
+    var status = await Permission.contacts.status; //await 붙이면 다음 줄 실행 안하고 기다려줌
+    if (status.isGranted) {
       print('허락됨');
     } else if (status.isDenied) {
       print('거절됨');
+      Permission.contacts.request();
     }
   }
 
