@@ -33,7 +33,9 @@ class _MyAppState extends State<MyApp> {
       print('허락됨');
       var contacts = await ContactsService.getContacts();
       print(contacts);
-      name = contacts;
+      setState(() {
+        name = contacts;
+      });
       // var newPerson = new Contact(); //new생략가능
       // newPerson.givenName = '민수';
       // newPerson.familyName = '김';
@@ -56,7 +58,9 @@ class _MyAppState extends State<MyApp> {
 
 
   var total = 3;
-  var name = ['lea', 'jin', 'jun'];
+  var name = [];
+  // List<Contact> name = [];
+  // var name = ['lea', 'jin', 'jun'];
   var like = [0, 0, 0];
 
   addName(a) {
