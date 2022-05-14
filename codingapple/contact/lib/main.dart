@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart'
+import 'package:permission_handler/permission_handler.dart';
 
 // 앱을 실행시켜주세요.
 void main() {
