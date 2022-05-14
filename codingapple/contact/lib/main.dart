@@ -36,6 +36,12 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
+  @override
+  void initState() {
+    super.initState();
+    // TODO : implement initState
+  }
+
 
   var total = 3;
   var name = ['lea', 'jin', 'jun'];
