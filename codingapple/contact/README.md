@@ -67,4 +67,7 @@ project 1, 연락처앱 만들기
 - 부모 state를 자식이 수정하려면? 1. 부모안에 수정함수를 만들고 2. 자식에게 보내기
 - Controller: 유저가 입력한 데이터를 변수에 담자
 - onChanged(){}: 유저가 입력한 데이터를 변수에 담자2
-- [] List, {} map 
+- [] List, {} m입ap 
+- dart는 타입을 잘 지켜야 함
+- Union Type : 변수 하나에 타입 여러개를 넣을 수 있음
+- List<dynamic> Type : 리스트인데 안에 모든 타입을 넣을 수 있음
