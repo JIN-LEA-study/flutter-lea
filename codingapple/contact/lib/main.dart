@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
 
   // 패키지 연락처 권한 여부
   getPermission() async {
-    var state = await Permisson.contacts.status;
+    var state = await Permisson.contacts.status; //await 붙이면 다음 줄 실행 안하고 기다려줌
     if (state.insgranted) {
       print('허락됨');
     } else if (status.isDenied) {
