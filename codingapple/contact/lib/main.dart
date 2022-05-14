@@ -23,9 +23,17 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var a = 3;
+  var total = 3;
   var name = ['lea', 'jin', 'jun'];
   var like = [0, 0, 0];
+
+
+  addOne(){
+    setState(() {
+      total++;
+    });
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +44,7 @@ class _MyAppState extends State<MyApp> {
     // Container,SizedBox(), LP단위
 
     return Scaffold(
-        appBar: AppBar(title: Text('연락처앱'),),
+        appBar: AppBar(title: Text(total.toString()),),
         bottomNavigationBar: BottomAppBar(),
         body: ListView.builder(
           itemCount: 3,
@@ -50,7 +58,7 @@ class _MyAppState extends State<MyApp> {
       floatingActionButton: FloatingActionButton(
         onPressed:(){
           showDialog(context: context, builder: (context) {
-            return DialogUI(state: a); // 자식위젯(작명: 보낼state)
+            return DialogUI(addOne: addOne); // 자식위젯(작명: 보낼state)
           });
       },
       ),
@@ -62,8 +70,8 @@ class _MyAppState extends State<MyApp> {
 
 
 class DialogUI extends StatelessWidget {
-  const DialogUI({Key? key, this.state}) : super(key: key);
-  final state;
+  const DialogUI({Key? key, this.addOne}) : super(key: key);
+  final addOne;
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +82,7 @@ class DialogUI extends StatelessWidget {
         child: Column (
           children: [
             TextField(),
-            TextButton( child: Text(state.toString()), onPressed: (){}),
+            TextButton( child: Text('완료'), onPressed: (){addOne();}),
             TextButton(
               child: Text('취소'),
               onPressed: () { Navigator.pop(context); })
