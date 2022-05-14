@@ -24,6 +24,18 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+
+  // 패키지 연락처 권한 여부
+  getPermission() async {
+    var state = await Permisson.contacts.status;
+    if (state.insgranted) {
+      print('허락됨');
+    } else if (status.isDenied) {
+      print('거절됨');
+    }
+  }
+
+
   var total = 3;
   var name = ['lea', 'jin', 'jun'];
   var like = [0, 0, 0];
