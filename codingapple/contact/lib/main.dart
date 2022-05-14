@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
       floatingActionButton: FloatingActionButton(
         onPressed:(){
           showDialog(context: context, builder: (context) {
-            return DialogUI();
+            return DialogUI(state: a); // 자식위젯(작명: 보낼state)
           });
       },
       ),
@@ -62,7 +62,8 @@ class _MyAppState extends State<MyApp> {
 
 
 class DialogUI extends StatelessWidget {
-  const DialogUI({Key? key}) : super(key: key);
+  const DialogUI({Key? key, this.state}) : super(key: key);
+  final state;
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +74,7 @@ class DialogUI extends StatelessWidget {
         child: Column (
           children: [
             TextField(),
-            TextButton( child: Text('완료'), onPressed: (){}),
+            TextButton( child: Text(state.toString()), onPressed: (){}),
             TextButton(
               child: Text('취소'),
               onPressed: () { Navigator.pop(context); })
