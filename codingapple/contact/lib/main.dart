@@ -23,7 +23,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var a = 1;
+  var a = 3;
   var name = ['lea', 'jin', 'jun'];
   var like = [0, 0, 0];
 
@@ -62,7 +62,7 @@ class _MyAppState extends State<MyApp> {
 
 
 class DialogUI extends StatelessWidget {
-  const DialogUI({key? key}) : super(key: key);
+  const DialogUI({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -76,13 +76,14 @@ class DialogUI extends StatelessWidget {
             TextButton( child: Text('완료'), onPressed: (){}),
             TextButton(
               child: Text('취소'),
-              onPressed: () { Navigator.pop9context); })
+              onPressed: () { Navigator.pop(context); })
           ],
         ),
       ),
     );
   }
 }
+
 
 
 // 위젯 만들기 1. 작명 2. return에 코드 넣기

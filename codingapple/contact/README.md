@@ -57,3 +57,4 @@ project 1, 연락처앱 만들기
 - context : 부모 위젯의 정보를 담고 있는 변수, 클릭하면 부모 위젯을 알 수 있 (족보라고 생각하면 됨)
 - context.findAncestorWidgetofExactType<MaterialApp> () : 부모중에 MaterialApp이 있는지 찾아주셈 / showDialog(), Scaffold.of(), Navigator.pop(), Theme.of() 함수 쓸 때 사용
 - builder() : context를 한번 더 만들어서 감싸줌
+- 다른 class에 있는 변수는 마음대로 못씀
