@@ -58,3 +58,4 @@ project 1, 연락처앱 만들기
 - context.findAncestorWidgetofExactType<MaterialApp> () : 부모중에 MaterialApp이 있는지 찾아주셈 / showDialog(), Scaffold.of(), Navigator.pop(), Theme.of() 함수 쓸 때 사용
 - builder() : context를 한번 더 만들어서 감싸줌
 - 다른 class에 있는 변수는 마음대로 못씀
+- 부모 -> 자식 state 전송하는 법 1. 보내고 2. 등록하고 3.쓰기 / 자식위젯(작명: 보낼state)
