@@ -32,7 +32,12 @@ class _MyAppState extends State<MyApp> {
     if (status.isGranted) {
       print('허락됨');
       var contacts = await ContactsService.getContacts();
-      print(contacts);
+      // print(contacts[0].displayName);
+      var newPerson = new Contact(); //new생략가능
+      newPerson.givenName = '민수';
+      newPerson.familyName = '김';
+      ContactsService.addContact(newPerson);
+
     } else if (status.isDenied) {
       print('거절됨');
       Permission.contacts.request();
