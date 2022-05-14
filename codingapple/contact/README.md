@@ -11,6 +11,7 @@ project 1, 연락처앱 만들기
 - [o] Flutter Typograghy, Layout
 - [o] Expanded, Flexible, Layout
 - [o] ListView(), how to make widget
+- [o] getPermisson
 
 
 
