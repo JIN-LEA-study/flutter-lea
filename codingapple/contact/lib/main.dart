@@ -70,8 +70,9 @@ class _MyAppState extends State<MyApp> {
 
 
 class DialogUI extends StatelessWidget {
-  const DialogUI({Key? key, this.addOne}) : super(key: key);
+  DialogUI({Key? key, this.addOne}) : super(key: key);
   final addOne;
+  var inputData = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +82,7 @@ class DialogUI extends StatelessWidget {
         height: 300,
         child: Column (
           children: [
-            TextField(),
+            TextField(onChanged: (text) {},),
             TextButton( child: Text('완료'), onPressed: (){addOne();}),
             TextButton(
               child: Text('취소'),
