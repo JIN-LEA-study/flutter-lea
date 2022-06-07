@@ -6,3 +6,4 @@ void main(List<String> args) {
   print(2);
   print(2*5);
 }
+
